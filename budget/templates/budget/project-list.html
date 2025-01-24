@@ -24,6 +24,11 @@
     </div>
     {% endfor %}
   </div>
+  <!-- Link to Admin Page -->
+  <a href="{% url 'admin:index' %}" class="btn btn-primary">Go to Admin</a>
+
+  <!-- Link to Add Project Page -->
+  <a href="{% url 'add_project' %}" class="btn btn-success">Add Project</a>
 
 
 </div>
