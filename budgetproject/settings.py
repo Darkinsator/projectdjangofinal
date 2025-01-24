@@ -28,7 +28,7 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = [
-    'https://djangoprojectfinal.onrender.com',
+    'djangoprojectfinal.onrender.com',
     'localhost',
     '127.0.0.1',  # Local IP for testing
 ]
