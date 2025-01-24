@@ -35,6 +35,10 @@ STATIC_URL = '/static/'
 # Directory for collectstatic to gather all static files
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
 # Application definition
 
 INSTALLED_APPS = [
