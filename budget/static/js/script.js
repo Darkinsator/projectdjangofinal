@@ -1,8 +1,9 @@
 
 (function(){
 
-  document.querySelector('#categoryInput').addEventListener('keydown', function(e){
-    if (e.keyCode != 13){
+  document.querySelector('#categoryInput').addEventListener('keydown', function(e) {
+    // Check if the 'Enter' key was pressed using 'e.key' property
+    if (e.key !== "Enter") {
       return;
     }
 
