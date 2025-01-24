@@ -10,7 +10,3 @@ urlpatterns = [
     path('add', views.ProjectCreateView.as_view(), name='add'),
     path('<slug:project_slug>', views.project_detail, name='detail')
 ]
-
-
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
