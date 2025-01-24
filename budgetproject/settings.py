@@ -23,12 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'v&%-(vr87k=u3-mt#)t$k4f@xm01-bx=y_jgwkp_8o(78!eu-z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-
+DEBUG = False
 
 ALLOWED_HOSTS = [
-    'djangoprojectfinal.onrender.com'
+    'djangoprojectfinal.onrender.com',  # Add your deployed domain
+    'localhost',                        # For local development
+    '127.0.0.1',                        # For local development
 ]
 
 # Static files (CSS, JavaScript, Images)
