@@ -25,7 +25,15 @@ SECRET_KEY = 'v&%-(vr87k=u3-mt#)t$k4f@xm01-bx=y_jgwkp_8o(78!eu-z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['your-app-name.onrender.com', 'your-custom-domain.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [
+    'https://djangoprojectfinal.onrender.com',  # Replace with your actual Render domain
+]
+
+ALLOWED_HOSTS = [
+    'https://djangoprojectfinal.onrender.com',
+    'localhost',
+    '127.0.0.1',  # Local IP for testing
+]
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
