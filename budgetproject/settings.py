@@ -20,16 +20,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'v&%-(vr87k=u3-mt#)t$k4f@xm01-bx=y_jgwkp_8o(78!eu-z'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG", "False").lower() == "true"
 
-ALLOWED_HOSTS = [
-    'djangoprojectfinal.onrender.com',  # Add your deployed domain
-    'localhost',                        # For local development
-    '127.0.0.1',                        # For local development
-]
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(",")
+
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
