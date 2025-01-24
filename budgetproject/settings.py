@@ -25,9 +25,7 @@ SECRET_KEY = 'v&%-(vr87k=u3-mt#)t$k4f@xm01-bx=y_jgwkp_8o(78!eu-z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'https://djangoprojectfinal.onrender.com',  # Replace with your actual Render domain
-]
+
 
 ALLOWED_HOSTS = [
     'https://djangoprojectfinal.onrender.com',
