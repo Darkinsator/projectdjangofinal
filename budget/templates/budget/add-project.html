@@ -6,10 +6,17 @@
   <form action="" method="POST">
     {% csrf_token %}
     {{ form }}
-    <input type="text" id="categoryInput" placeholder="Enter category" />
-    <button type="button" id="addCategoryButton">Add Category</button>
-    <ul id="categoriesContainer"></ul>
-    <input type="hidden" name="categoriesString" />
+    <!-- Input field to enter categories -->
+<input type="text" id="categoryInput" placeholder="Enter category" />
+
+<!-- Button to add a category -->
+<button type="button" id="addCategoryButton">Add Category</button>
+
+<!-- List of categories -->
+<ul id="categoriesContainer"></ul>
+
+<!-- Hidden input to store the categories as a comma-separated string -->
+<input type="hidden" name="categoriesString" />
 
     <button type="submit" class="btn">Start Project</button>
 
