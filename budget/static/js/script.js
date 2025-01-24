@@ -3,10 +3,15 @@
   const categoryInput = document.querySelector('#categoryInput');
   const addCategoryButton = document.querySelector('#addCategoryButton');
   const categoriesContainer = document.querySelector('#categoriesContainer');
-  
+  const form = document.querySelector('form'); // Reference the form element
+
+  // Prevent the form from submitting on 'Enter' keypress
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Always prevent form submission by default
+  });
+
   // Event listener for 'Enter' key (adds category when 'Enter' is pressed)
   categoryInput.addEventListener('keydown', function(e) {
-    // Prevent form submission if 'Enter' key is pressed
     if (e.key === "Enter") {
       e.preventDefault(); // Prevent the form from submitting
       const categoryName = categoryInput.value.trim();
@@ -19,7 +24,8 @@
   });
 
   // Event listener for the "Add Category" button (adds category when clicked)
-  addCategoryButton.addEventListener('click', function() {
+  addCategoryButton.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent any default behavior (e.g., form submission)
     const categoryName = categoryInput.value.trim();
     if (categoryName === '') return; // Don't add empty categories
 
@@ -60,5 +66,4 @@
     e.parentElement.remove();
     updateCategoriesString();
   };
-
 })();
