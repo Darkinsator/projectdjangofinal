@@ -28,9 +28,7 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = [
-    'djangoprojectfinal.onrender.com',
-    'localhost',
-    '127.0.0.1',  # Local IP for testing
+    'djangoprojectfinal.onrender.com'
 ]
 
 # Static files (CSS, JavaScript, Images)
