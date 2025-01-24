@@ -25,8 +25,13 @@ SECRET_KEY = 'v&%-(vr87k=u3-mt#)t$k4f@xm01-bx=y_jgwkp_8o(78!eu-z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['your-app-name.onrender.com', 'your-custom-domain.com', '127.0.0.1', 'localhost']
 
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = '/static/'
+
+# Directory for collectstatic to gather all static files
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Application definition
 
